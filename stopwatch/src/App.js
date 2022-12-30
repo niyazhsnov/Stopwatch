@@ -106,7 +106,7 @@ const Timer = () => {
   const { pause, play, running, stop, tick, elapsedMs } = useTimer();
 
  
-  const mseconds = Math.floor((elapsedMs / (1000 % 60)) );
+  const mseconds = Math.floor((elapsedMs) );
   const seconds = Math.floor((elapsedMs / 1000 ) % 60);
   const minutes = Math.floor((elapsedMs / (1000 * 60)) % 60);
 
